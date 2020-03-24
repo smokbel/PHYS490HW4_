@@ -64,10 +64,10 @@ if __name__ == '__main__':
             print('Epoch: [{}/{}]'.format(epoch+1, num_epochs)+\
                   '\tTraining Loss: {:.4f}'.format(train_loss))
 
-    # final report
+    #Final training loss
     print('Final training loss: {:.4f}'.format(losses[-1]))
 
-    # Plot saved in results folder
+    #Plots saved in results folder
     plt.plot(range(num_epochs), losses, color="red")
     plt.title('Training loss vs. epoch')
     plt.savefig('results/loss.pdf')
